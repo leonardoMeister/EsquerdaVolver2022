@@ -10,20 +10,20 @@ namespace EsquerdaVolver.ConsoleApp
 
             while (true)
             {
-                Console.WriteLine("Informe o limite de comandos: Ex(3,7 e 0 para parar)");
+                Console.WriteLine("Informe o limite de comandos: Ex(3,7 e 0 para sair)");
                 int numComandos = Convert.ToInt32(Console.ReadLine());
                 if (numComandos == 0) break;
                 Console.WriteLine("Informe o Comando: Ex(DDED)");
                 string comandos = Console.ReadLine().ToLower();; 
                 string direcao = "n";
 
-                for (int i = 0; i < numComandos; i++)
+                for (int i = 0; i < numComandos; i++)   // numComandos executa apenas a quantidade especificade de X as direções
                 {
-                    if (comandos.Length < numComandos)
+                    if (comandos.Length < numComandos)  // caso informe 3 e apenas DD ele executa apenas o DD e para a execução
                     {
                         if (i == comandos.Length) break;
                     }   
-                    //dd
+                    
 
                     if (comandos[i] == 'd')
                     {
