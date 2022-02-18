@@ -22,7 +22,8 @@ namespace EsquerdaVolver.ConsoleApp
                     if (comandos.Length < numComandos)
                     {
                         if (i == comandos.Length) break;
-                    }
+                    }   
+                    //dd
 
                     if (comandos[i] == 'd')
                     {
